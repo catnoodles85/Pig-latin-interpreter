@@ -64,10 +64,8 @@ let value = searchBar.value
 searchBar.addEventListener("keydown", (e) => {
     value = e.target.value
     text = value
-    console.log(text)
     outPutH2.innerText = encodeText(text) 
-    console.log(text);
-});
+  });
 
 
 
@@ -225,7 +223,7 @@ encodeWordTest()
 */
 function encodeText(text) {
  
-  let english = text.split(' ')
+  let english = text.split(" ")
   let textArray = [];
   
   for (let index = 0; index < english.length; index += 1) {
@@ -233,7 +231,7 @@ function encodeText(text) {
     textArray.push(result)
   }
   
-  return textArray.join(" ");
+  return textArray.join("");
   
    
  
