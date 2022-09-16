@@ -58,7 +58,7 @@ const testClusteredConsonantWords = {
   
 let text 
 const searchBar = document.getElementById('input-Bar')
-const outPutH2 = document.getElementById('output-text')
+const outPutH2 = document.getElementById('output-Bar')
 let value = searchBar.value 
 
 searchBar.addEventListener("keydown", (e) => {

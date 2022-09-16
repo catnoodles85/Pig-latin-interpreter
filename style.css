@@ -2,8 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,559;1,800&family=Prompt:ital,wght@1,500&family=Roboto+Slab&display=swap');
 
 * {
-   font-family: 'Merriweather Sans', sans-serif;
-  
+    font-family: 'Merriweather Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+}
+
+body{
+    background:linear-gradient(#e9a3a3, #fcfcfd)
+}
+
+p{
+    font-size: 20px;
+    margin: 20px;
+    padding: 20px;
 }
 
 #heading{
@@ -11,17 +23,16 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
+    margin: 50px;
+    padding: 10px 10px 10px 10px;
 }
 
 #input-Bar{
-    margin: 15px;
-    padding: 5px;
-    border: solid #000000 1px;
+    margin: 40px;
+    padding: 15px;
+    border: solid #000000 3px;
     border-radius: 15px;
-    
 }
-
 
 #input{
     display:flex;
@@ -29,22 +40,16 @@
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    border: 5px;
+    border: 10px;
     border-color: black;
 }
+
 #output{
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 10px;
-}
-#output-text{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
+    margin: 40px;
 }
 
 #container{
@@ -54,4 +59,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+#output-Bar{
+    margin: 40px;
+    padding: 15px;
+    border: solid #000000 3px;
+    border-radius: 15px;
 }
