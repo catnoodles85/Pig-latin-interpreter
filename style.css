@@ -24,13 +24,13 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 72px;
+    margin: 30px;
     padding: 10px 10px 10px 10px;
 }
 
 #input-Bar{
-    margin: 30px;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     border: solid #000000 3px;
     border-radius: 15px;
 }
@@ -40,7 +40,7 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 12px;
+    margin: 0px;
     border: 10px;
     border-color: black;
 }
