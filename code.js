@@ -56,15 +56,17 @@ const testClusteredConsonantWords = {
         "omelet" becomes "omelet-yay" 
         */
   
-let text 
-const searchBar = document.getElementById('input-Bar')
-const outPutH2 = document.getElementById('output-Bar')
-let value = searchBar.value 
+let text; 
+let searchBar = document.getElementById("input-Bar");
+let outPutH2 = document.getElementById("output");
+let value = searchBar.value;
 
 searchBar.addEventListener("keydown", (e) => {
-    value = e.target.value
-    text = value
-    outPutH2.innerText = encodeText(text) 
+    value = e.target.value;
+    text = value;
+    outPutH2.innerText = encodeText(text);
+    console.log(value);
+    
   });
 
 
@@ -82,14 +84,14 @@ function VowelWordTest() {
     test: 'eat should equal: eat-yay',
     expected: 'eat-yay',
     result: encodeVowelWord('eat')
-  })
+  });
   
   console.assert(encodeVowelWord('omelet') === 'omelet-yay',{
     test: 'omelet should equal: omelet-yay',
     expected: 'omelet-yay',
     result: encodeVowelWord('omelet')
-  })
-}
+  });
+};
 VowelWordTest();
 
 /*  --------------------------------------------------------
@@ -108,11 +110,10 @@ For example:
    
    
    function encodeConsonantWord(word) {
-    
-       let x = word[0];
-       result = word.slice(1)
+      let x = word[0];
+      result = word.slice(1);
       return result + `-${x}ay`;
-    }
+    };
   
   
     
@@ -126,23 +127,23 @@ For example:
     return word.slice(2) + "-" + word.slice(0,2) +"ay"
     }
   }
-}
+};
 
   function encodeConsonantWordClusterThree(word){
     return word.slice(3) + "-" + word.slice(0,3) +"ay"
-  }
+  };
 
 function encodeConsonantWordTest(){
   console.assert(encodeConsonantWord('latin') === 'atin-lay',{
     test: 'latin should equal: atin-lay',
     expected: 'atin-lay',
     result: encodeConsonantWord('latin')
-  })
+  });
   console.assert(encodeConsonantWord('banana') === 'anana-bay',{
     test: ' banana should equal: anana-bay ',
     expected: 'anana-bay',
     result: encodeConsonantWord('banana')
-  })
+  });
 }
 encodeConsonantWordTest();
 /*  --------------------------------------------------------
@@ -173,7 +174,7 @@ function encodeWord(word) {
     }if (word[2] === vowel){
       return encodeConsonantWordCluster(word);
     }if (word[2] === vowel){
-      return encodeConsonantWordCluster(word)
+      return encodeConsonantWordCluster(word);
     }if(word[3] === vowel){
       return encodeConsonantWordClusterThree(word);
     }
@@ -186,25 +187,25 @@ function encodeWordTest(){
     test: 'are should equal: are-yay',
     expected: 'are-yay',
     result: encodeWord('are')
-  })
+  });
   
   console.assert(encodeWord('cheers') === 'eers-chay',{
     test: 'cheers should equal: eers-chay ',
     expected: 'eers-chay',
     result: encodeWord('cheers')
-  })
+  });
   
   console.assert(encodeWord('duck') === 'uck-day',{
     test: 'duck should equal: uck-day ',
     expected: 'uck-day',
     result: encodeWord('duck')
-  })
+  });
 
   console.assert(encodeWord('string') === 'ing-stray', {
     test: 'string should equal ing-stray ',
     expected: 'ing-stray',
     result: encodeWord('string')
-  })
+  });
 }
 encodeWordTest()
 
@@ -231,7 +232,7 @@ function encodeText(text) {
     textArray.push(result)
   }
   
-  return textArray.join("");
+  return textArray.join(" ");
   
    
  
