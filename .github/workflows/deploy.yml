@@ -15,7 +15,7 @@ jobs:
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ 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 }}
+          deploy_key: ${ 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 }
           publish_dir: ./public
           user_name: "kenzieadmin"
           user_email: "kenzieadmin@users.noreply.github.com"
