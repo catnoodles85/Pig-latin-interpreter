@@ -18,12 +18,12 @@ p{
 }
 
 #heading{
-    font-size: 20px;
+    font-size: 15px;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 65px;
+    margin: 35px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -45,7 +45,7 @@ p{
 }
 
 #container{
-    font-size: 20px;
+    
     height: 60vh;
     width: 100vw;
     display:flex;
