@@ -5,7 +5,7 @@
     font-family: 'Merriweather Sans', sans-serif;
     margin: 0px;
     padding: 0px;
-    font-size: 20px;
+    
 }
 
 body{
@@ -18,11 +18,12 @@ p{
 }
 
 #heading{
+    font-size: 20px;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin: 65px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -44,7 +45,8 @@ p{
 }
 
 #container{
-    height: 90vh;
+    font-size: 20px;
+    height: 60vh;
     width: 100vw;
     display:flex;
     align-items: center;
