@@ -41,8 +41,6 @@ const testClusteredConsonantWords = {
 };
 
 
-// To run the code, open it in the browser using the VS Code Live Server
-// Then open the console.  You can directly call these function in the console to test.
 
 
 /*  --------------------------------------------------------
