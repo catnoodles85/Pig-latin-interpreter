@@ -3,6 +3,8 @@
 
 * {
     font-family: 'Merriweather Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
     
 }
 
@@ -37,13 +39,13 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 12px;
     border: 10px;
     border-color: black;
 }
 
 #container{
-    
+    font-size: 15px;
     height: 60vh;
     width: 100vw;
     display:flex;
